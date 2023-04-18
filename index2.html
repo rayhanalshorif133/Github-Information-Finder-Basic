@@ -1,0 +1,1122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Profile Page - Friends</title>
+
+	<!-- Required meta tags always come first -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<!-- Theme Font -->
+	<link rel="preload" type="text/css" href="css/theme-font.min.css" as="style">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="Bootstrap/dist/css/bootstrap.css">
+
+	<!-- Main Styles CSS -->
+	<link rel="stylesheet" type="text/css" href="css/main.min.css">
+
+	<!-- Main RTL CSS -->
+	<!--<link rel="stylesheet" type="text/css" href="css/rtl.min.css">-->
+
+	<!-- WebP Safari Support -->
+	<script src="https://unpkg.com/webp-hero@0.0.0-dev.27/dist-cjs/polyfills.js"></script>
+	<script src="https://unpkg.com/webp-hero@0.0.0-dev.27/dist-cjs/webp-hero.bundle.js"></script>
+
+</head>
+<body class="page-has-left-panels page-has-right-panels">
+
+
+<!-- Preloader -->
+
+<div id="hellopreloader">
+	<div class="preloader">
+		<svg width="45" height="45" stroke="#fff">
+			<g fill="none" fill-rule="evenodd" stroke-width="2" transform="translate(1 1)">
+				<circle cx="22" cy="22" r="6" stroke="none">
+					<animate attributeName="r" begin="1.5s" calcMode="linear" dur="3s" repeatCount="indefinite" values="6;22"/>
+					<animate attributeName="stroke-opacity" begin="1.5s" calcMode="linear" dur="3s" repeatCount="indefinite" values="1;0"/>
+					<animate attributeName="stroke-width" begin="1.5s" calcMode="linear" dur="3s" repeatCount="indefinite" values="2;0"/>
+				</circle>
+				<circle cx="22" cy="22" r="6" stroke="none">
+					<animate attributeName="r" begin="3s" calcMode="linear" dur="3s" repeatCount="indefinite" values="6;22"/>
+					<animate attributeName="stroke-opacity" begin="3s" calcMode="linear" dur="3s" repeatCount="indefinite" values="1;0"/>
+					<animate attributeName="stroke-width" begin="3s" calcMode="linear" dur="3s" repeatCount="indefinite" values="2;0"/>
+				</circle>
+				<circle cx="22" cy="22" r="8">
+					<animate attributeName="r" begin="0s" calcMode="linear" dur="1.5s" repeatCount="indefinite" values="6;1;2;3;4;5;6"/>
+				</circle>
+			</g>
+		</svg>
+
+		<div class="text">Loading ...</div>
+	</div>
+</div>
+
+<div class="header-spacer"></div>
+<div class="container">
+	<div class="row">
+		<div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+			<div class="ui-block responsive-flex">
+				<div class="ui-block-title">
+					<div class="h6 title">James’s Friends (86)</div>
+					<form class="w-search">
+						<div class="form-group with-button">
+							<input class="form-control" type="text" placeholder="Search Friends...">
+							<button>
+								<svg class="olymp-magnifying-glass-icon"><use xlink:href="#olymp-magnifying-glass-icon"></use></svg>
+							</button>
+						</div>
+					</form>
+					<a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="#olymp-three-dots-icon"></use></svg></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Top Header-Profile -->
+
+<div class="container">
+	<div class="row">
+		<div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+			<div class="ui-block">
+				<div class="top-header">
+					<div class="top-header-thumb">
+
+					</div>
+					<div class="profile-section">
+						<div class="row">
+							<div class="col col-lg-5 col-md-5 col-sm-12 col-12">
+								<ul class="profile-menu">
+									<li>
+										<a href="02-ProfilePage.html" class="active">Timeline</a>
+									</li>
+									<li>
+										<a href="05-ProfilePage-About.html">About</a>
+									</li>
+									<li>
+										<a href="06-ProfilePage.html">Friends</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col col-lg-5 ms-auto col-md-5 col-sm-12 col-12">
+								<ul class="profile-menu">
+									<li>
+										<a href="07-ProfilePage-Photos.html">Photos</a>
+									</li>
+									<li>
+										<a href="09-ProfilePage-Videos.html">Videos</a>
+									</li>
+									<li>
+										<div class="more">
+											<svg class="olymp-three-dots-icon"><use xlink:href="#olymp-three-dots-icon"></use></svg>
+											<ul class="more-dropdown more-with-triangle">
+												<li>
+													<a href="#">Report Profile</a>
+												</li>
+												<li>
+													<a href="#">Block Profile</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="control-block-button">
+							<a href="35-YourAccount-FriendsRequests.html" class="btn btn-control bg-blue">
+								<svg class="olymp-happy-face-icon"><use xlink:href="#olymp-happy-face-icon"></use></svg>
+							</a>
+
+							<a href="#" class="btn btn-control bg-purple">
+								<svg class="olymp-chat---messages-icon"><use xlink:href="#olymp-chat---messages-icon"></use></svg>
+							</a>
+
+							<div class="btn btn-control bg-primary more">
+								<svg class="olymp-settings-icon"><use xlink:href="#olymp-settings-icon"></use></svg>
+
+								<ul class="more-dropdown more-with-triangle triangle-bottom-right">
+									<li>
+										<a href="#" data-bs-toggle="modal" data-bs-target="#update-header-photo">Update Profile Photo</a>
+									</li>
+									<li>
+										<a href="#" data-bs-toggle="modal" data-bs-target="#update-header-photo">Update Header Photo</a>
+									</li>
+									<li>
+										<a href="29-YourAccount-AccountSettings.html">Account Settings</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="top-header-author">
+						<a href="02-ProfilePage.html" class="author-thumb">
+							<img loading="lazy" src="img/author-main1.webp" alt="author" width="124" height="124">
+						</a>
+						<div class="author-content">
+							<a href="02-ProfilePage.html" class="h4 author-name">James Spiegel</a>
+							<div class="country">San Francisco, CA</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- ... end Top Header-Profile -->
+
+
+
+
+<!-- Friends -->
+
+<div class="container">
+	<div class="row">
+		<div class="col col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+			<div class="ui-block">
+				
+				<!-- Friend Item -->
+				
+				<div class="friend-item">
+					<div class="friend-header-thumb">
+						<img loading="lazy" src="img/friend1.webp" alt="friend" width="318" height="122">
+					</div>
+				
+					<div class="friend-item-content">
+				
+						<div class="more">
+							<svg class="olymp-three-dots-icon"><use xlink:href="#olymp-three-dots-icon"></use></svg>
+							<ul class="more-dropdown">
+								<li>
+									<a href="#">Report Profile</a>
+								</li>
+								<li>
+									<a href="#">Block Profile</a>
+								</li>
+								<li>
+									<a href="#">Turn Off Notifications</a>
+								</li>
+							</ul>
+						</div>
+						<div class="friend-avatar">
+							<div class="author-thumb">
+								<img loading="lazy" src="img/avatar1.webp" alt="author" width="92" height="92">
+							</div>
+							<div class="author-content">
+								<a href="#" class="h5 author-name">Nicholas Grissom</a>
+								<div class="country">San Francisco, CA</div>
+							</div>
+						</div>
+				
+						<div class="swiper-container" data-slide="fade">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="friend-count" data-swiper-parallax="-500">
+										<a href="#" class="friend-count-item">
+											<div class="h6">52</div>
+											<div class="title">Friends</div>
+										</a>
+										<a href="#" class="friend-count-item">
+											<div class="h6">240</div>
+											<div class="title">Photos</div>
+										</a>
+										<a href="#" class="friend-count-item">
+											<div class="h6">16</div>
+											<div class="title">Videos</div>
+										</a>
+									</div>
+									<div class="control-block-button" data-swiper-parallax="-100">
+										<a href="#" class="btn btn-control bg-blue">
+											<svg class="olymp-happy-face-icon"><use xlink:href="#olymp-happy-face-icon"></use></svg>
+										</a>
+				
+										<a href="#" class="btn btn-control bg-purple">
+											<svg class="olymp-chat---messages-icon"><use xlink:href="#olymp-chat---messages-icon"></use></svg>
+										</a>
+				
+									</div>
+								</div>
+				
+								<div class="swiper-slide">
+									<p class="friend-about" data-swiper-parallax="-500">
+										Hi!, I’m Marina and I’m a Community Manager for “Gametube”. Gamer and full-time mother.
+									</p>
+				
+									<div class="friend-since" data-swiper-parallax="-100">
+										<span>Friends Since:</span>
+										<div class="h6">December 2014</div>
+									</div>
+								</div>
+							</div>
+				
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- ... end Friend Item -->			</div>
+		</div>
+		<div class="col col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+			<div class="ui-block">
+				
+				<!-- Friend Item -->
+				
+				<div class="friend-item">
+					<div class="friend-header-thumb">
+						<img loading="lazy" src="img/friend2.webp" alt="friend" width="318" height="122">
+					</div>
+				
+					<div class="friend-item-content">
+				
+						<div class="more">
+							<svg class="olymp-three-dots-icon"><use xlink:href="#olymp-three-dots-icon"></use></svg>
+							<ul class="more-dropdown">
+								<li>
+									<a href="#">Report Profile</a>
+								</li>
+								<li>
+									<a href="#">Block Profile</a>
+								</li>
+								<li>
+									<a href="#">Turn Off Notifications</a>
+								</li>
+							</ul>
+						</div>
+						<div class="friend-avatar">
+							<div class="author-thumb">
+								<img loading="lazy" src="img/avatar2.webp" alt="author" width="92" height="92">
+							</div>
+							<div class="author-content">
+								<a href="#" class="h5 author-name">Marina Valentine</a>
+								<div class="country">Long Island, NY</div>
+							</div>
+						</div>
+				
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="friend-count" data-swiper-parallax="-500">
+										<a href="#" class="friend-count-item">
+											<div class="h6">52</div>
+											<div class="title">Friends</div>
+										</a>
+										<a href="#" class="friend-count-item">
+											<div class="h6">240</div>
+											<div class="title">Photos</div>
+										</a>
+										<a href="#" class="friend-count-item">
+											<div class="h6">16</div>
+											<div class="title">Videos</div>
+										</a>
+									</div>
+									<div class="control-block-button" data-swiper-parallax="-100">
+										<a href="#" class="btn btn-control bg-blue">
+											<svg class="olymp-happy-face-icon"><use xlink:href="#olymp-happy-face-icon"></use></svg>
+										</a>
+				
+										<a href="#" class="btn btn-control bg-purple">
+											<svg class="olymp-chat---messages-icon"><use xlink:href="#olymp-chat---messages-icon"></use></svg>
+										</a>
+				
+									</div>
+								</div>
+				
+								<div class="swiper-slide">
+									<p class="friend-about" data-swiper-parallax="-500">
+										Hi!, I’m Marina and I’m a Community Manager for “Gametube”. Gamer and full-time mother.
+									</p>
+				
+									<div class="friend-since" data-swiper-parallax="-100">
+										<span>Friends Since:</span>
+										<div class="h6">December 2014</div>
+									</div>
+								</div>
+							</div>
+				
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- ... end Friend Item -->			</div>
+		</div>
+		<div class="col col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+			<div class="ui-block">
+				
+				<!-- Friend Item -->
+				
+				<div class="friend-item">
+					<div class="friend-header-thumb">
+						<img loading="lazy" src="img/friend3.webp" alt="friend" width="318" height="122">
+					</div>
+				
+					<div class="friend-item-content">
+				
+						<div class="more">
+							<svg class="olymp-three-dots-icon"><use xlink:href="#olymp-three-dots-icon"></use></svg>
+							<ul class="more-dropdown">
+								<li>
+									<a href="#">Report Profile</a>
+								</li>
+								<li>
+									<a href="#">Block Profile</a>
+								</li>
+								<li>
+									<a href="#">Turn Off Notifications</a>
+								</li>
+							</ul>
+						</div>
+						<div class="friend-avatar">
+							<div class="author-thumb">
+								<img loading="lazy" src="img/avatar3.webp" alt="author" width="92" height="92">
+							</div>
+							<div class="author-content">
+								<a href="#" class="h5 author-name">Nicholas Grissom</a>
+								<div class="country">Los Angeles, CA</div>
+							</div>
+						</div>
+				
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="friend-count" data-swiper-parallax="-500">
+										<a href="#" class="friend-count-item">
+											<div class="h6">49</div>
+											<div class="title">Friends</div>
+										</a>
+										<a href="#" class="friend-count-item">
+											<div class="h6">132</div>
+											<div class="title">Photos</div>
+										</a>
+										<a href="#" class="friend-count-item">
+											<div class="h6">5</div>
+											<div class="title">Videos</div>
+										</a>
+									</div>
+									<div class="control-block-button" data-swiper-parallax="-100">
+										<a href="#" class="btn btn-control bg-blue">
+											<svg class="olymp-happy-face-icon"><use xlink:href="#olymp-happy-face-icon"></use></svg>
+										</a>
+				
+										<a href="#" class="btn btn-control bg-purple">
+											<svg class="olymp-chat---messages-icon"><use xlink:href="#olymp-chat---messages-icon"></use></svg>
+										</a>
+				
+									</div>
+								</div>
+				
+								<div class="swiper-slide">
+									<p class="friend-about" data-swiper-parallax="-500">
+										Hi!, I’m Marina and I’m a Community Manager for “Gametube”. Gamer and full-time mother.
+									</p>
+				
+									<div class="friend-since" data-swiper-parallax="-100">
+										<span>Friends Since:</span>
+										<div class="h6">December 2014</div>
+									</div>
+								</div>
+							</div>
+				
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- ... end Friend Item -->			</div>
+		</div>
+		<div class="col col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+			<div class="ui-block">
+				
+				<!-- Friend Item -->
+				
+				<div class="friend-item">
+					<div class="friend-header-thumb">
+						<img loading="lazy" src="img/friend4.webp" alt="friend" width="318" height="122">
+					</div>
+				
+					<div class="friend-item-content">
+						<div class="more">
+							<svg class="olymp-three-dots-icon"><use xlink:href="#olymp-three-dots-icon"></use></svg>
+							<ul class="more-dropdown">
+								<li>
+									<a href="#">Report Profile</a>
+								</li>
+								<li>
+									<a href="#">Block Profile</a>
+								</li>
+								<li>
+									<a href="#">Turn Off Notifications</a>
+								</li>
+							</ul>
+						</div>
+				
+						<div class="friend-avatar">
+							<div class="author-thumb">
+								<img loading="lazy" src="img/avatar4.webp" alt="author" width="92" height="92">
+							</div>
+							<div class="author-content">
+								<a href="#" class="h5 author-name">Chris Greyson</a>
+								<div class="country">Austin, TX</div>
+							</div>
+						</div>
+				
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="friend-count" data-swiper-parallax="-500">
+										<a href="#" class="friend-count-item">
+											<div class="h6">65</div>
+											<div class="title">Friends</div>
+										</a>
+										<a href="#" class="friend-count-item">
+											<div class="h6">104</div>
+											<div class="title">Photos</div>
+										</a>
+										<a href="#" class="friend-count-item">
+											<div class="h6">12</div>
+											<div class="title">Videos</div>
+										</a>
+									</div>
+									<div class="control-block-button" data-swiper-parallax="-100">
+										<a href="#" class="btn btn-control bg-blue">
+											<svg class="olymp-happy-face-icon"><use xlink:href="#olymp-happy-face-icon"></use></svg>
+										</a>
+				
+										<a href="#" class="btn btn-control bg-purple">
+											<svg class="olymp-chat---messages-icon"><use xlink:href="#olymp-chat---messages-icon"></use></svg>
+										</a>
+				
+									</div>
+								</div>
+				
+								<div class="swiper-slide">
+									<p class="friend-about" data-swiper-parallax="-500">
+										Hi!, I’m Marina and I’m a Community Manager for “Gametube”. Gamer and full-time mother.
+									</p>
+				
+									<div class="friend-since" data-swiper-parallax="-100">
+										<span>Friends Since:</span>
+										<div class="h6">December 2014</div>
+									</div>
+								</div>
+							</div>
+				
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- ... end Friend Item -->			</div>
+		</div>
+
+		<div class="col col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+			<div class="ui-block">
+				
+				<!-- Friend Item -->
+				
+				<div class="friend-item">
+					<div class="friend-header-thumb">
+						<img loading="lazy" src="img/friend5.webp" alt="friend" width="318" height="122">
+					</div>
+				
+					<div class="friend-item-content">
+				
+						<div class="more">
+							<svg class="olymp-three-dots-icon"><use xlink:href="#olymp-three-dots-icon"></use></svg>
+							<ul class="more-dropdown">
+								<li>
+									<a href="#">Report Profile</a>
+								</li>
+								<li>
+									<a href="#">Block Profile</a>
+								</li>
+								<li>
+									<a href="#">Turn Off Notifications</a>
+								</li>
+							</ul>
+						</div>
+						<div class="friend-avatar">
+							<div class="author-thumb">
+								<img loading="lazy" src="img/avatar5.webp" width="92" height="92" alt="author">
+							</div>
+							<div class="author-content">
+								<a href="#" class="h5 author-name">Elaine Dreifuss</a>
+								<div class="country">New York, NY</div>
+							</div>
+						</div>
+				
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="friend-count" data-swiper-parallax="-500">
+										<a href="#" class="friend-count-item">
+											<div class="h6">82</div>
+											<div class="title">Friends</div>
+										</a>
+										<a href="#" class="friend-count-item">
+											<div class="h6">204</div>
+											<div class="title">Photos</div>
+										</a>
+										<a href="#" class="friend-count-item">
+											<div class="h6">27</div>
+											<div class="title">Videos</div>
+										</a>
+									</div>
+									<div class="control-block-button" data-swiper-parallax="-100">
+										<a href="#" class="btn btn-control bg-blue">
+											<svg class="olymp-happy-face-icon"><use xlink:href="#olymp-happy-face-icon"></use></svg>
+										</a>
+				
+										<a href="#" class="btn btn-control bg-purple">
+											<svg class="olymp-chat---messages-icon"><use xlink:href="#olymp-chat---messages-icon"></use></svg>
+										</a>
+				
+									</div>
+								</div>
+				
+								<div class="swiper-slide">
+									<p class="friend-about" data-swiper-parallax="-500">
+										Hi!, I’m Marina and I’m a Community Manager for “Gametube”. Gamer and full-time mother.
+									</p>
+				
+									<div class="friend-since" data-swiper-parallax="-100">
+										<span>Friends Since:</span>
+										<div class="h6">December 2014</div>
+									</div>
+								</div>
+							</div>
+				
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- ... end Friend Item -->			</div>
+		</div>
+		<div class="col col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+			<div class="ui-block">
+				
+				<!-- Friend Item -->
+				
+				<div class="friend-item">
+					<div class="friend-header-thumb">
+						<img loading="lazy" src="img/friend6.webp" alt="friend" width="318" height="122">
+					</div>
+				
+					<div class="friend-item-content">
+				
+						<div class="more">
+							<svg class="olymp-three-dots-icon"><use xlink:href="#olymp-three-dots-icon"></use></svg>
+							<ul class="more-dropdown">
+								<li>
+									<a href="#">Report Profile</a>
+								</li>
+								<li>
+									<a href="#">Block Profile</a>
+								</li>
+								<li>
+									<a href="#">Turn Off Notifications</a>
+								</li>
+							</ul>
+						</div>
+						<div class="friend-avatar">
+							<div class="author-thumb">
+								<img loading="lazy" src="img/avatar6.webp" alt="author" width="92" height="92">
+							</div>
+							<div class="author-content">
+								<a href="#" class="h5 author-name">Bruce Peterson</a>
+								<div class="country">Austin, TX</div>
+							</div>
+						</div>
+				
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="friend-count" data-swiper-parallax="-500">
+										<a href="#" class="friend-count-item">
+											<div class="h6">73</div>
+											<div class="title">Friends</div>
+										</a>
+										<a href="#" class="friend-count-item">
+											<div class="h6">360</div>
+											<div class="title">Photos</div>
+										</a>
+										<a href="#" class="friend-count-item">
+											<div class="h6">11</div>
+											<div class="title">Videos</div>
+										</a>
+									</div>
+									<div class="control-block-button" data-swiper-parallax="-100">
+										<a href="#" class="btn btn-control bg-blue">
+											<svg class="olymp-happy-face-icon"><use xlink:href="#olymp-happy-face-icon"></use></svg>
+										</a>
+				
+										<a href="#" class="btn btn-control bg-purple">
+											<svg class="olymp-chat---messages-icon"><use xlink:href="#olymp-chat---messages-icon"></use></svg>
+										</a>
+				
+									</div>
+								</div>
+				
+								<div class="swiper-slide">
+									<p class="friend-about" data-swiper-parallax="-500">
+										Hi!, I’m Marina and I’m a Community Manager for “Gametube”. Gamer and full-time mother.
+									</p>
+				
+									<div class="friend-since" data-swiper-parallax="-100">
+										<span>Friends Since:</span>
+										<div class="h6">December 2014</div>
+									</div>
+								</div>
+							</div>
+				
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- ... end Friend Item -->			</div>
+		</div>
+		<div class="col col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+			<div class="ui-block">
+				
+				<!-- Friend Item -->
+				
+				<div class="friend-item">
+					<div class="friend-header-thumb">
+						<img loading="lazy" src="img/friend7.webp" alt="friend" width="318" height="122">
+					</div>
+				
+					<div class="friend-item-content">
+				
+						<div class="more">
+							<svg class="olymp-three-dots-icon"><use xlink:href="#olymp-three-dots-icon"></use></svg>
+							<ul class="more-dropdown">
+								<li>
+									<a href="#">Report Profile</a>
+								</li>
+								<li>
+									<a href="#">Block Profile</a>
+								</li>
+								<li>
+									<a href="#">Turn Off Notifications</a>
+								</li>
+							</ul>
+						</div>
+						<div class="friend-avatar">
+							<div class="author-thumb">
+								<img loading="lazy" src="img/avatar7.webp" alt="author" width="92" height="92">
+							</div>
+							<div class="author-content">
+								<a href="#" class="h5 author-name">Carol Summers</a>
+								<div class="country">Los Angeles, CA</div>
+							</div>
+						</div>
+				
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="friend-count" data-swiper-parallax="-500">
+										<a href="#" class="friend-count-item">
+											<div class="h6">49</div>
+											<div class="title">Friends</div>
+										</a>
+										<a href="#" class="friend-count-item">
+											<div class="h6">132</div>
+											<div class="title">Photos</div>
+										</a>
+										<a href="#" class="friend-count-item">
+											<div class="h6">5</div>
+											<div class="title">Videos</div>
+										</a>
+									</div>
+									<div class="control-block-button" data-swiper-parallax="-100">
+										<a href="#" class="btn btn-control bg-blue">
+											<svg class="olymp-happy-face-icon"><use xlink:href="#olymp-happy-face-icon"></use></svg>
+										</a>
+				
+										<a href="#" class="btn btn-control bg-purple">
+											<svg class="olymp-chat---messages-icon"><use xlink:href="#olymp-chat---messages-icon"></use></svg>
+										</a>
+				
+									</div>
+								</div>
+				
+								<div class="swiper-slide">
+									<p class="friend-about" data-swiper-parallax="-500">
+										Hi!, I’m Marina and I’m a Community Manager for “Gametube”. Gamer and full-time mother.
+									</p>
+				
+									<div class="friend-since" data-swiper-parallax="-100">
+										<span>Friends Since:</span>
+										<div class="h6">December 2014</div>
+									</div>
+								</div>
+							</div>
+				
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- ... end Friend Item -->			</div>
+		</div>
+		<div class="col col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+			<div class="ui-block">
+				
+				<!-- Friend Item -->
+				
+				<div class="friend-item">
+					<div class="friend-header-thumb">
+						<img loading="lazy" src="img/friend8.webp" alt="friend" width="318" height="122">
+					</div>
+				
+					<div class="friend-item-content">
+						<div class="more">
+							<svg class="olymp-three-dots-icon"><use xlink:href="#olymp-three-dots-icon"></use></svg>
+							<ul class="more-dropdown">
+								<li>
+									<a href="#">Report Profile</a>
+								</li>
+								<li>
+									<a href="#">Block Profile</a>
+								</li>
+								<li>
+									<a href="#">Turn Off Notifications</a>
+								</li>
+							</ul>
+						</div>
+				
+						<div class="friend-avatar">
+							<div class="author-thumb">
+								<img loading="lazy" src="img/avatar8.webp" alt="author" width="92" height="92">
+							</div>
+							<div class="author-content">
+								<a href="#" class="h5 author-name">Michael Maximoff</a>
+								<div class="country">Portland, OR</div>
+							</div>
+						</div>
+				
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="friend-count" data-swiper-parallax="-500">
+										<a href="#" class="friend-count-item">
+											<div class="h6">58</div>
+											<div class="title">Friends</div>
+										</a>
+										<a href="#" class="friend-count-item">
+											<div class="h6">304</div>
+											<div class="title">Photos</div>
+										</a>
+										<a href="#" class="friend-count-item">
+											<div class="h6">19</div>
+											<div class="title">Videos</div>
+										</a>
+									</div>
+									<div class="control-block-button" data-swiper-parallax="-100">
+										<a href="#" class="btn btn-control bg-blue">
+											<svg class="olymp-happy-face-icon"><use xlink:href="#olymp-happy-face-icon"></use></svg>
+										</a>
+				
+										<a href="#" class="btn btn-control bg-purple">
+											<svg class="olymp-chat---messages-icon"><use xlink:href="#olymp-chat---messages-icon"></use></svg>
+										</a>
+				
+									</div>
+								</div>
+				
+								<div class="swiper-slide">
+									<p class="friend-about" data-swiper-parallax="-500">
+										Hi!, I’m Marina and I’m a Community Manager for “Gametube”. Gamer and full-time mother.
+									</p>
+				
+									<div class="friend-since" data-swiper-parallax="-100">
+										<span>Friends Since:</span>
+										<div class="h6">December 2014</div>
+									</div>
+								</div>
+							</div>
+				
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- ... end Friend Item -->			</div>
+		</div>
+	</div>
+</div>
+
+<!-- ... end Friends -->
+
+
+
+
+<!-- ... end Window-popup Choose from my Photo -->
+
+
+<a class="back-to-top" href="#">
+	<svg class="back-icon" width="14" height="18"><use xlink:href="#olymp-back-to-top"></use></svg>
+</a>
+
+
+
+
+<!-- Window-popup-CHAT for responsive min-width: 768px -->
+
+<div class="ui-block popup-chat popup-chat-responsive" tabindex="-1" role="dialog" aria-labelledby="popup-chat-responsive" aria-hidden="true">
+
+	<div class="modal-content">
+		<div class="modal-header">
+			<span class="icon-status online"></span>
+			<h6 class="title" >Chat</h6>
+			<div class="more">
+				<svg class="olymp-three-dots-icon"><use xlink:href="#olymp-three-dots-icon"></use></svg>
+				<svg class="olymp-little-delete js-chat-open"><use xlink:href="#olymp-little-delete"></use></svg>
+			</div>
+		</div>
+		<div class="modal-body">
+			<div class="mCustomScrollbar">
+				<ul class="notification-list chat-message chat-message-field">
+					<li>
+						<div class="author-thumb">
+							<img loading="lazy" src="img/avatar14-sm.webp" width="28" height="28" alt="author" class="mCS_img_loaded">
+						</div>
+						<div class="notification-event">
+							<span class="chat-message-item">Hi James! Please remember to buy the food for tomorrow! I’m gonna be handling the gifts and Jake’s gonna get the drinks</span>
+							<span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">Yesterday at 8:10pm</time></span>
+						</div>
+					</li>
+
+					<li>
+						<div class="author-thumb">
+							<img loading="lazy" src="img/author-page.webp" width="36" height="36" alt="author" class="mCS_img_loaded">
+						</div>
+						<div class="notification-event">
+							<span class="chat-message-item">Don’t worry Mathilda!</span>
+							<span class="chat-message-item">I already bought everything</span>
+							<span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">Yesterday at 8:29pm</time></span>
+						</div>
+					</li>
+
+					<li>
+						<div class="author-thumb">
+							<img loading="lazy" src="img/avatar14-sm.webp" width="28" height="28" alt="author" class="mCS_img_loaded">
+						</div>
+						<div class="notification-event">
+							<span class="chat-message-item">Hi James! Please remember to buy the food for tomorrow! I’m gonna be handling the gifts and Jake’s gonna get the drinks</span>
+							<span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">Yesterday at 8:10pm</time></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<form class="need-validation">
+
+		<div class="form-group">
+			<textarea class="form-control" placeholder="Press enter to post..."></textarea>
+			<div class="add-options-message">
+				<a href="#" class="options-message">
+					<svg class="olymp-computer-icon"><use xlink:href="#olymp-computer-icon"></use></svg>
+				</a>
+				<div class="options-message smile-block">
+
+					<svg class="olymp-happy-sticker-icon"><use xlink:href="#olymp-happy-sticker-icon"></use></svg>
+
+					<ul class="more-dropdown more-with-triangle triangle-bottom-right">
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat1.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat2.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat3.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat4.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat5.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat6.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat7.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat8.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat9.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat10.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat11.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat12.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat13.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat14.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat15.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat16.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat17.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat18.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat19.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat20.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat21.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat22.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat23.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat24.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat25.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat26.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img loading="lazy" src="img/icon-chat27.webp" alt="icon" width="20" height="20">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</form>
+		</div>
+	</div>
+
+</div>
+
+<!-- ... end Window-popup-CHAT for responsive min-width: 768px -->
+
+
+<!-- JS Scripts -->
+
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		var webpMachine = new webpHero.WebpMachine()
+		webpMachine.polyfillDocument()
+	});
+</script>
+<script src="js/jQuery/jquery-3.5.1.min.js"></script>
+
+<script src="js/libs/jquery.mousewheel.min.js"></script>
+<script src="js/libs/perfect-scrollbar.min.js"></script>
+<script src="js/libs/imagesloaded.pkgd.min.js"></script>
+<script src="js/libs/material.min.js"></script>
+<script src="js/libs/selectize.min.js"></script>
+<script src="js/libs/swiper.jquery.min.js"></script>
+<script src="js/libs/isotope.pkgd.min.js"></script>
+<script src="js/libs/ajax-pagination.min.js"></script>
+<script src="js/libs/jquery.magnific-popup.min.js"></script>
+
+<script src="js/main.js"></script>
+<script src="js/libs-init/libs-init.js"></script>
+
+<script src="Bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- SVG icons loader -->
+<script src="js/svg-loader.js"></script>
+<!-- /SVG icons loader -->
+
+</body>
+</html>
