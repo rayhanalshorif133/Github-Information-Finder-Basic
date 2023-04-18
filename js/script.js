@@ -10,8 +10,18 @@ async function getData(url) {
     const data = response.data.items[0];
     console.log(data);
     $(".avatar").attr("src", data.avatar_url);
-    $(".name").text(data.login);
-    $(".bio").text(data.bio);
+
+    axios.get(data.url)
+    .then((response) => {
+        var profile_data = response.data;
+        let name = profile_data.name == null ? profile_data.login : profile_data.name;
+        let bio = profile_data.bio == null ? "No bio found" : profile_data.bio;
+        let email = profile_data.email == null ? "No email found" : profile_data.email;
+        $(".name").text(name);
+        $(".email").text(email);
+        $(".bio").text(bio);
+        $(".address").text(profile_data.location);
+    });
     $(".followers").text(data.followers);
     $(".goto_github").attr("href", data.html_url);
 }
