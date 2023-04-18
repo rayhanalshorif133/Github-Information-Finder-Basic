@@ -1,0 +1,21 @@
+.fa-angles-right{
+    animation: fa-angles-right 2s linear infinite;
+}
+
+@keyframes fa-angles-right {
+    0% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(-3px);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}

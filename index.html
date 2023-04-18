@@ -17,6 +17,9 @@
         <link
             href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
             rel="stylesheet" />
+        <link
+            href="css/style.css"
+            rel="stylesheet" />
         <title>
             Github Information Finder
         </title>
@@ -45,9 +48,9 @@
                                         <i class="fas fa-search fa-lg text-warning"></i>
                                         <div class="mb-0">
                                             <div class="form-outline">
-                                                <input type="text" id="typeText"
+                                                <input type="text" id="username"
                                                     class="form-control" />
-                                                <label class="form-label" for="typeText">
+                                                <label class="form-label" for="username">
                                                     Enter Github Username
                                                 </label>
                                             </div>
@@ -62,20 +65,25 @@
                 <div class="row mt-2">
                     <div class="col-lg-4">
                         <div class="card mb-4">
-                            <div class="card-body text-center">
+                            <div class="card-body text-center profile">
                                 <img
                                     src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
                                     alt="avatar" class="rounded-circle
-                                    img-fluid" style="width: 150px;">
-                                <h5 class="my-3">John Smith</h5>
-                                <p class="text-muted mb-1">Full Stack Developer</p>
-                                <p class="text-muted mb-4">Bay Area, San
+                                    img-fluid avatar" style="width: 150px;">
+                                <h5 class="my-3 name">John Smith</h5>
+                                <p class="text-muted mb-1 bio">Full Stack Developer</p>
+                                <p class="text-muted mb-4 address">Bay Area, San
                                     Francisco, CA</p>
+                                <p class="text-muted mb-4 followers"></p>
                                 <div class="d-flex justify-content-center mb-2">
                                     <button type="button" class="btn
                                         btn-primary">Follow</button>
-                                    <button type="button" class="btn
-                                        btn-outline-primary ms-1">Message</button>
+                                    <a href="#" class="goto_github" target="_blank">
+                                        <button type="button" class="btn
+                                            btn-outline-primary ms-1">
+                                            <i class="fab fa-github"></i> Github
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
